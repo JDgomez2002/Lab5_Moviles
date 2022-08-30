@@ -26,9 +26,7 @@ class ItemAdapter (private val context: Context, private val dataset: List<Affir
     override fun onBindViewHolder(holder: ItemViewHolder, position: Int) {
         val item = dataset[position]
         holder.textView.text = context.resources.getString(item.stringResourceId)
-        //holder.imageView.setImageResource(item.imageResourceId)
         Picasso.get().load(item.imageResourceId).into(holder.imageView)
-
     }
 
     override fun getItemCount(): Int{
