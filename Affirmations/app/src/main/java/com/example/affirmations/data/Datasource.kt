@@ -6,8 +6,8 @@ import com.example.affirmations.model.Affirmation
 class Datasource {
     fun loadAffirmations(): List<Affirmation> {
         return listOf<Affirmation>(
-            Affirmation(R.string.affirmation1, "https://prod.pictures.autoscout24.net/listing-images/1d335626-5a6f-4844-8ca4-1a563f7e4443_1fb8134f-33ff-438b-b9ff-a0cf77f4ea93.jpg/1920x1080.webp"),
-            //Affirmation(R.string.affirmation2, R.drawable.image2),
+            Affirmation(R.string.affirmation1, "https://github.com/JDgomez2002/Lab5_Moviles/blob/main/Images_Garage/CX5.png?raw=true"),
+            Affirmation(R.string.affirmation2, "https://github.com/JDgomez2002/Lab5_Moviles/blob/main/Images_Garage/Camaro.jpg?raw=true"),
             //Affirmation(R.string.affirmation3, R.drawable.image3),
             //Affirmation(R.string.affirmation4, R.drawable.image4),
             //Affirmation(R.string.affirmation5, R.drawable.image5),
