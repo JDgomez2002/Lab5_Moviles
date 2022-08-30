@@ -1,5 +1,5 @@
 package com.example.affirmations.data
-
+//import com.squareup.picasso
 import com.example.affirmations.R
 import com.example.affirmations.model.Affirmation
 
