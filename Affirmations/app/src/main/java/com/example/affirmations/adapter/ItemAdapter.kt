@@ -9,6 +9,7 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.affirmations.R
 import com.example.affirmations.model.Affirmation
+import com.squareup.picasso.Picasso
 
 class ItemAdapter (private val context: Context, private val dataset: List<Affirmation>) : RecyclerView.Adapter<ItemAdapter.ItemViewHolder>(){
     class ItemViewHolder(private val view: View): RecyclerView.ViewHolder(view){
@@ -25,7 +26,8 @@ class ItemAdapter (private val context: Context, private val dataset: List<Affir
     override fun onBindViewHolder(holder: ItemViewHolder, position: Int) {
         val item = dataset[position]
         holder.textView.text = context.resources.getString(item.stringResourceId)
-        holder.imageView.setImageResource(item.imageResourceId)
+        //holder.imageView.setImageResource(item.imageResourceId)
+        Picasso.get().load(item.imageResourceId).into(holder.imageView)
 
     }
 
